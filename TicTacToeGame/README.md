@@ -1,4 +1,4 @@
-🎮 Tic-Tac-Toe Game
+# 🎮 Tic-Tac-Toe Game
 
 A simple and interactive Tic-Tac-Toe Game built using HTML, CSS, and JavaScript.
 This is my 3rd Internship Task where I implemented game logic, dynamic turn switching, and restart functionality.
