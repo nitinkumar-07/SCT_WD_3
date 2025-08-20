@@ -1,0 +1,121 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+   background: #2b0d36;
+   color: #f7e8e8;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1{
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+.game-board{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(120px,1fr));
+}
+.box{
+    border: 2px solid #f7cbcb;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 60px;
+    font-weight: 500;
+    height: 120px;
+    cursor: pointer;
+}
+ 
+.box:first-child,
+.box:nth-child(2),
+.box:nth-child(3) {
+    border-top: 3px solid #f7cbcb;
+}
+
+.box:nth-child(3),
+.box:nth-child(6),
+.box:nth-child(9) {
+    border-right: 3px solid #f7cbcb;
+}
+
+.box:nth-child(1),
+.box:nth-child(4),
+.box:nth-child(7) {
+    border-left:3px solid #f7cbcb;
+}
+
+.box:nth-child(7),
+.box:nth-child(8),
+.box:nth-child(9) {
+    border-bottom: 3px solid #f7cbcb;
+}
+
+.game-players{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.player{
+    margin-inline: 20px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.restart{
+    margin-top: 25px;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    background-color: #852c89;
+    color: #fff;
+    cursor: pointer;
+}
+.restart:hover{
+    background: #a429abe5;
+}
+.box.disabled{
+    background: #3b1c33;
+}
+
+.alertBox{
+    position: absolute;
+    top: 0;
+    background-color: #dfb8e8;
+    color: #3c3b3f;
+    width: 100%;
+    padding: 8px 12px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    height: 40px;
+    display: none;
+}
+@media screen and (max-width:450px){
+    .game-board{
+        grid-template-columns: repeat(3,minmax(100px,1fr));
+    }
+    .container h1{
+        font-size: 22px;
+    }
+    .box{
+        height: 100px;
+        font-size: 50px;
+    }
+}
+
+
