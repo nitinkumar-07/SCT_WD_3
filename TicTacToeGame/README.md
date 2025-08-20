@@ -3,7 +3,7 @@
 A simple and interactive Tic-Tac-Toe Game built using HTML, CSS, and JavaScript.
 This is my 3rd Internship Task where I implemented game logic, dynamic turn switching, and restart functionality.
 
-🚀 Features
+# 🚀 Features
 
 🎲 Two-player game (Player 1: X, Player 2: O)
 
@@ -15,7 +15,7 @@ This is my 3rd Internship Task where I implemented game logic, dynamic turn swit
 
 🎨 Responsive and stylish UI
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 * HTML5 – Structure of the game board
 
@@ -23,9 +23,9 @@ This is my 3rd Internship Task where I implemented game logic, dynamic turn swit
 
 * JavaScript (Vanilla JS) – Game logic & interactivity
 
-📸 Screenshot
+# 📸 Screenshot
 
-🎯 How to Play
+# 🎯 How to Play
 
 1. Player 1 starts as X, Player 2 is O
 
